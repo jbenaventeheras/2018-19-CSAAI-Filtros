@@ -130,7 +130,7 @@ function main() {
       var r = data[i];
       var g = data[i+1];
       var b = data[i+2];
-      var v = 0.2126*r + 0.7152*g + 0.0722*b;
+      var v = (3*r + 4*g + b)/8;
       data[i] = data[i+1] = data[i+2] = v
       }
 ctx.putImageData(imgDataGrhalf, 0, canvas.height/2);
