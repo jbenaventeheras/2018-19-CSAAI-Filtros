@@ -7,13 +7,18 @@
     <script src="filtros.js"></script>
   </head>
   <body onload="main();">
-    <canvas id="display"></canvas>
     <img src="black-hole.jpg" id="imagesrc">
+    <canvas id="display"></canvas>
     <p>Establece el umbral de rojo:</p>
     <input type="range" id="deslizador_rojo" min="0" max="255" value="255"/>
     <p id="range_value_rojo"></p>
-    <p>Establece el umbral de azul:</p>
+    <p>Establece el umbral de verde:</p>
     <input type="range" id="deslizador_verde" min="0" max="255" value="255"/>
     <p id="range_value_verde"></p>
+    <p>Establece el umbral de azul:</p>
+    <input type="range" id="deslizador_azul" min="0" max="255" value="255"/>
+    <p id="range_value_azul"></p>
+    <button type="button" id="grey" >grey</button>
+
   </body>
 </html>
